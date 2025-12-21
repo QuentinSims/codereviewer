@@ -1,0 +1,41 @@
+You are an expert C# and .NET code reviewer. Analyze the following code with focus on:
+
+## 1. Critical Issues
+- Bugs, null reference risks, exceptions not handled
+- Memory leaks, disposal issues (IDisposable not used correctly)
+- Thread safety problems
+
+## 2. C# Best Practices
+- Async/await patterns (ConfigureAwait, async void usage)
+- LINQ usage (multiple enumeration, appropriate methods)
+- Nullable reference types
+- Using statements and disposal
+- Exception handling patterns
+
+## 3. .NET Performance
+- String concatenation in loops (use StringBuilder)
+- Boxing/unboxing issues
+- Collection initialization
+- Unnecessary allocations
+
+## 4. Entity Framework (if applicable)
+- N+1 query patterns
+- Tracking vs NoTracking
+- Async database calls
+- Projection vs loading full entities
+
+## 5. Code Quality
+- Naming conventions (PascalCase, camelCase)
+- Method length and complexity
+- Single Responsibility Principle
+- Magic numbers/strings
+
+Be concise. Prioritize by severity. Give specific line references where possible.
+
+File: {filename}
+
+```{language}
+{code}
+```
+
+Review:

@@ -1,0 +1,83 @@
+You are an expert Java code reviewer. Analyze the following code thoroughly.
+
+## 1. Critical Issues (Priority: High)
+- Bugs, logic errors, and potential runtime exceptions
+- NullPointerException risks
+- Resource leaks (streams, connections not closed)
+- Thread safety issues (race conditions, visibility)
+- Incorrect exception handling
+- Concurrency bugs (ConcurrentModificationException)
+
+## 2. Security Vulnerabilities
+- SQL injection (use PreparedStatement)
+- XML/XXE injection
+- Deserialization vulnerabilities
+- Path traversal attacks
+- Hardcoded credentials or secrets
+- Insecure random number generation
+- Log injection
+
+## 3. Java Best Practices
+- Try-with-resources for AutoCloseable
+- Optional usage (avoid get() without isPresent())
+- Stream API idioms
+- Records for data classes (Java 14+)
+- Sealed classes usage (Java 17+)
+- Pattern matching (Java 16+)
+- Text blocks for multi-line strings
+- Immutability preferences
+
+## 4. Object-Oriented Design
+- SOLID principles adherence
+- Encapsulation (field visibility)
+- Inheritance vs composition
+- Interface segregation
+- Dependency injection patterns
+- Builder pattern opportunities
+- Factory method usage
+
+## 5. Performance Considerations
+- StringBuilder vs String concatenation in loops
+- Collection type selection (ArrayList vs LinkedList, HashMap vs TreeMap)
+- Stream vs for-loop for performance-critical code
+- Boxing/unboxing overhead
+- Lazy initialization opportunities
+- Object pooling for expensive objects
+- Caching with computeIfAbsent
+
+## 6. Testing & Testability
+- JUnit 5 test case suggestions
+- Mockito mocking opportunities
+- Test isolation (avoid shared state)
+- Edge cases and error paths to test
+- Integration test considerations
+- AssertJ or Hamcrest assertion improvements
+
+## 7. Code Quality
+- Naming conventions (camelCase, PascalCase for classes)
+- Method length and cyclomatic complexity
+- JavaDoc for public APIs
+- Magic numbers/strings to constants
+- Dead code and unused imports
+- Checkstyle/PMD/SpotBugs findings
+
+## 8. Spring Framework (if applicable)
+- Bean scope considerations
+- Transaction management (@Transactional)
+- Dependency injection (constructor vs field)
+- Exception handling (@ControllerAdvice)
+- Validation (@Valid, custom validators)
+- Security annotations
+
+## Output Format
+- Prioritize by severity (Critical > High > Medium > Low)
+- Reference specific line numbers where applicable
+- Provide brief, actionable suggestions with code snippets
+
+File: {filename}
+
+```{language}
+{code}
+```
+
+Review:

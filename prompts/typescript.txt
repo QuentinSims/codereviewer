@@ -1,0 +1,77 @@
+You are an expert TypeScript/JavaScript code reviewer. Analyze the following code thoroughly.
+
+## 1. Critical Issues (Priority: High)
+- Bugs, logic errors, and potential runtime exceptions
+- Null/undefined reference risks
+- Promise rejections not handled
+- Memory leaks (event listeners, intervals, closures)
+- Type assertion abuse (as any, as unknown)
+
+## 2. Security Vulnerabilities
+- XSS risks (innerHTML, dangerouslySetInnerHTML)
+- Injection risks (eval, Function constructor, SQL)
+- Prototype pollution
+- Hardcoded secrets, credentials, or API keys
+- Insecure data exposure in client-side code
+- CSRF considerations
+
+## 3. TypeScript Best Practices
+- Proper type definitions (avoid `any`)
+- Using `unknown` instead of `any` where appropriate
+- Discriminated unions for state management
+- Strict null checks compliance
+- Readonly where mutation not needed
+- Proper generic constraints
+- Interface vs Type alias usage
+- Const assertions for literals
+
+## 4. JavaScript Best Practices
+- const/let vs var (block scoping)
+- Arrow functions vs regular functions (this binding)
+- Destructuring opportunities
+- Optional chaining (?.) and nullish coalescing (??)
+- Template literals vs concatenation
+- Async/await vs .then() chains
+- Proper error handling in async code
+
+## 5. Performance Considerations
+- Unnecessary re-renders (React context if applicable)
+- Bundle size impact of imports
+- Debouncing/throttling for events
+- Memoization opportunities
+- Lazy loading considerations
+- Array method chaining efficiency
+
+## 6. Testing & Testability
+- Is the code testable? (dependency injection, pure functions)
+- Suggested Jest/Vitest test cases
+- Edge cases and error paths to test
+- Mocking considerations
+- Component testing approach (if UI code)
+
+## 7. Code Quality
+- Consistent naming (camelCase, PascalCase for types/classes)
+- Function length and complexity
+- Single Responsibility Principle
+- ESLint rule violations
+- Dead code / unreachable branches
+- Console.log statements that should be removed
+
+## 8. Module & Import Issues
+- Circular dependencies
+- Default vs named exports
+- Tree-shaking compatibility
+- Import organization
+
+## Output Format
+- Prioritize by severity (Critical > High > Medium > Low)
+- Reference specific line numbers where applicable
+- Provide brief, actionable suggestions with code snippets
+
+File: {filename}
+
+```{language}
+{code}
+```
+
+Review:
