@@ -4,11 +4,11 @@ A command-line tool that uses Anthropic's Claude API to perform automated code r
 
 ## Features
 
-- 🔍 **Automated code review** using Claude AI
-- 🌐 **Multi-language support** with language-specific prompts
-- 📁 **Single file or directory** review modes
-- 🎯 **Customizable prompts** for your specific needs
-- 📊 **JSON output** for integration with other tools
+- **Automated code review** using Claude AI
+- **Multi-language support** with language-specific prompts
+- **Single file or directory** review modes
+- **Customizable prompts** for your specific needs
+- **JSON output** for integration with other tools
 
 ## Installation
 
